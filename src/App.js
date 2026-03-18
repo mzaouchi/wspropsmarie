@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Profil from './Components/Profil';
 
 function App() {
+  var name = "Youssef"
+  var age = 22
+  var pays = ["Tunisie", "France", "Cote d'ivoire","Italie","USA"]
+  var bootcamp = {
+    title : "Software",
+    loc : "Lac"
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Workshop React Props</h1>
+
+      <Profil name={name} age={age} pays={pays} bootcamp={bootcamp}/>
     </div>
   );
 }
